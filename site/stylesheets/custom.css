@@ -1,0 +1,338 @@
+/**************************************
+ * CUSTOM COLOR SCHEME FOR ORION DOCS *
+ **************************************/
+
+/* ---------------------------------- */
+/* 1. ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ ТЕМЫ LIGHT */
+/* ---------------------------------- */
+:root {
+  /* Primary & Accent */
+  --md-primary-fg-color: #7e7e7e;
+  --md-primary-fg-color--light: #9e9e9e;
+  --md-primary-fg-color--dark: #616161;
+  --md-accent-fg-color: #ffffff;
+  --md-accent-fg-color--light: #ffffff;
+  --md-accent-fg-color--dark: #e0e0e0;
+
+  /* Текст и фон */
+  --md-default-fg-color: #333333;
+  --md-default-fg-color-rgb: 51, 51, 51;
+  --md-default-bg-color: #ffffff;
+
+  /* Ссылки, footer */
+  --md-typeset-a-color: #1a73e8;
+  --md-footer-bg-color: #4a4a4a;
+  --md-footer-fg-color: #ffffff;
+
+  /* Code blocks */
+  --md-code-fg-color: #d63384;
+  --md-code-bg-color: #f8f9fa;
+
+  /* Table */
+  --md-primary-table-head-bg-color: #f5f7fa;
+  --md-primary-table-head-fg-color: #2c3e50;
+  --md-secondary-table-row-even-bg-color: #f8fafc;
+  --md-secondary-table-row-hover-bg-color: #e3f2fd;
+  --md-secondary-table-border-color: #e0e0e0;
+  
+  /* Изображения в таблицах */
+  --md-table-image-border: #e0e0e0;
+  --md-table-image-bg: #f8f8f8;
+}
+
+/* ---------------------------------- */
+/* 2. ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ ТЕМЫ DARK  */
+/* ---------------------------------- */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #fa4616;
+  --md-primary-fg-color--light: #fb7248;
+  --md-primary-fg-color--dark: #c83707;
+  --md-accent-fg-color: #050505;
+  --md-accent-fg-color--light: #333333;
+  --md-accent-fg-color--dark: #000000;
+
+  --md-default-fg-color: #e0e0e0;
+  --md-default-fg-color-rgb: 224, 224, 224;
+  --md-default-bg-color: #121212;
+
+  --md-typeset-a-color: #ff8a65;
+  --md-footer-bg-color: #1a1a1a;
+  --md-footer-fg-color: #b0b0b0;
+
+  --md-code-fg-color: #ff79c6;
+  --md-code-bg-color: #1e1e1e;
+
+  --md-primary-table-head-bg-color: #1e293b;
+  --md-primary-table-head-fg-color: #e2e8f0;
+  --md-secondary-table-row-even-bg-color: #1e1e2e;
+  --md-secondary-table-row-hover-bg-color: #2d3748;
+  --md-secondary-table-border-color: #334155;
+  
+  /* Изображения в таблицах */
+  --md-table-image-border: #444;
+  --md-table-image-bg: #1a1a1a;
+}
+
+
+/* ------------------------------
+   LINK HIGHLIGHTING (Variant C)
+   ------------------------------ */
+.md-typeset a {
+  position: relative;
+  color: var(--md-typeset-a-color);
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.md-typeset a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #fa4616; /* Акцентная линия */
+  transition: width .3s ease;
+}
+
+.md-typeset a:hover,
+.md-typeset a:focus {
+  color: #fa4616 !important;
+}
+
+.md-typeset a:hover::after,
+.md-typeset a:focus::after {
+  width: 100%;
+}
+
+
+/*********************
+ * ADDITIONAL STYLES *
+ *********************/
+
+/* Header improvements */
+.md-header {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+/* --- Увеличение логотипа --- */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 3rem;
+  width: auto;
+}
+
+/* Active tab indicator */
+.md-tabs__link--active {
+  position: relative;
+  font-weight: 700;
+}
+.md-tabs__link--active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 70%;
+  height: 3px;
+  background-color: var(--md-accent-fg-color);
+  transform: translateX(-50%);
+  border-radius: 2px 2px 0 0;
+}
+
+/* Buttons */
+.md-button {
+  border-radius: 4px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.md-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*********************************
+ * ENHANCED TABLE STYLES (FIXES) *
+ *********************************/
+.md-typeset__table { box-shadow: none; }
+.md-typeset__table table { background: transparent !important; }
+.md-typeset__table th {
+  background-color: transparent !important;
+  border-bottom: 2px solid var(--md-secondary-table-border-color);
+}
+.md-typeset__table td { background-color: transparent !important; }
+.md-typeset__table tr:nth-child(even) { background-color: transparent !important; }
+.md-typeset__table tr:hover { background-color: transparent !important; }
+.md-typeset__table td:empty { background-color: transparent !important; }
+[data-md-color-scheme="slate"] .md-typeset__table td:empty { background-color: transparent !important; }
+.md-typeset__table tr:first-child td:first-child:empty + td { background-color: transparent !important; }
+
+/***************************************************
+ * NAVIGATION: STYLES FOR ACTIVE & HOVER STATES    *
+ ***************************************************/
+:root { --md-nav-active-bg-color: rgba(51, 51, 51, 0.08); }
+[data-md-color-scheme="slate"] { --md-nav-active-bg-color: rgba(224, 224, 224, 0.08); }
+
+.md-nav__link,
+.md-tabs__link {
+  position: relative;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+/* underline анимация для sidebar */
+.md-nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 0%;
+  height: 2px;
+  background-color: #fa4616;
+  transition: width .3s ease;
+}
+.md-nav__link:hover::after,
+.md-nav__link:focus::after {
+  width: 100%;
+}
+
+/* underline анимация для верхних вкладок */
+.md-tabs__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #fa4616;
+  transition: width .3s ease;
+}
+.md-tabs__link:hover::after,
+.md-tabs__link:focus::after {
+  width: 100%;
+}
+
+.md-nav__link:hover,
+.md-nav__link--active {
+  background: none !important;
+  box-shadow: none !important;
+}
+[data-md-color-scheme="default"] .md-nav__link:hover {
+  color: var(--md-typeset-a-color) !important;
+}
+[data-md-color-scheme="slate"] .md-nav__link:hover {
+  color: var(--md-primary-fg-color) !important;
+}
+
+.md-sidebar .md-nav__link--active {
+  position: relative;
+  z-index: 3;
+  display: block;
+  margin: 0.1em 0;
+  border-radius: 4px;
+  background-color: transparent !important;
+  padding: 0.5em;
+  border: none !important;
+  box-shadow: inset 0 0 0 2px #050505 !important;
+}
+[data-md-color-scheme="default"] .md-nav__link--active {
+  font-weight: 600;
+  color: var(--md-primary-fg-color--dark) !important;
+}
+[data-md-color-scheme="slate"] .md-nav__link--active {
+  font-weight: 600;
+  color: #ffffff !important;
+}
+
+/**********************************
+ * ADDITIONAL FIXES *
+ **********************************/
+.md-typeset table:not([class]) td:first-child { background-color: transparent !important; }
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td:first-child { background-color: transparent !important; }
+.md-typeset table:not([class]) td[colspan="2"] { background-color: transparent !important; }
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td[colspan="2"] { background-color: transparent !important; }
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td { background-color: transparent !important; }
+
+
+
+/* Выпадающее меню для навигации */
+.md-tabs__item {
+  position: relative;
+}
+
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-primary-fg-color--light);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  min-width: 250px;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  padding: 0.5rem 0;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.nav-dropdown a {
+  display: block;
+  padding: 0.6rem 1.2rem;
+  color: var(--md-default-fg-color) !important;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  font-size: 0.9rem;
+}
+
+.nav-dropdown a:last-child {
+  border-bottom: none;
+}
+
+.nav-dropdown a:hover {
+  background-color: var(--md-primary-fg-color--light);
+  color: var(--md-default-bg-color) !important;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 76.1875em) {
+  .nav-dropdown {
+    position: static;
+    display: none;
+    box-shadow: none;
+    border: none;
+    max-height: none;
+    opacity: 1;
+    transform: none;
+    padding: 0;
+  }
+  
+  .md-tabs__item--active .nav-dropdown {
+    display: block;
+  }
+  
+  .nav-dropdown a {
+    padding: 0.8rem 1.5rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+}
+
+/* Улучшение видимости активной вкладки */
+.md-tabs__item--active {
+  background-color: rgba(0,0,0,0.05);
+}
+
+[data-md-color-scheme="slate"] .md-tabs__item--active {
+  background-color: rgba(255,255,255,0.05);
+}
+
+/* Индикатор наличия выпадающего меню */
+.md-tabs__item.has-dropdown > .md-tabs__link::after {
+  content: "▼";
+  margin-left: 0.3rem;
+  font-size: 0.7rem;
+  opacity: 0.7;
+}

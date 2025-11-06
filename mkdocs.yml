@@ -1,0 +1,161 @@
+site_name: ТЕХНИЧЕСКАЯ ДОКУМЕНТАЦИЯ ORION
+site_url: https://ORION-HW.github.io./TechSpec/
+site_description: Техническая информация по оборудованию ORION-RX и ORIONm
+site_author: Aleksey Zhukov
+copyright: Copyright &copy; 2025 ORION DAQ
+
+# Обновленная конфигурация темы
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.dropdown
+    - navigation.indexes
+    - navigation.instant
+    - navigation.path
+    - navigation.top
+    - content.tabs
+    - content.code.annotate
+  palette:
+
+    # Palette toggle for light mode
+    - scheme: default
+      primary: '#7e7e7e'
+      accent: '#ffffff'
+
+
+  icon:
+    repo: fontawesome/brands/git-alt
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+
+
+
+# Навигация
+nav:
+  - ГЛАВНАЯ: index.md
+
+  - МОДИФИКАЦИИ:
+      - ORIONm:
+          - Обзор ORIONm: orionm/review-orionm.md
+          - Характеристики прибора: orionm/spec.md
+          - Каналы ORIONm(опционально):
+            - orionm/channels/port-s-port.md
+            - orionm/channels/can-canfd.md
+            - orionm/channels/tacho.md
+            - orionm/channels/gps.md
+      - ORION-RX:
+          - Обзор ORION-RX: orion-rx/review-RX.md
+          - Конфигурации:
+            - orion-rx/config/r2.md
+            - orion-rx/config/r3.md
+            - orion-rx/config/r4.md
+            - orion-rx/config/r4-6slot.md
+
+
+
+  - МОДУЛИ ПРЕОБРАЗОВАНИЯ:
+    - Обзор: modules/list/review.md
+    - Модули:
+        - modules/list/2xacc-ict42s.md
+        - modules/list/2xchgd-dch42s.md
+        - modules/list/2xmic-mic42x.md
+        - modules/list/4xacc-icp42s.md
+        - modules/list/4xao-alo42s.md
+        - modules/list/4xchg-chg42s.md
+        - modules/list/4xstg-wsb42x.md
+        - modules/list/6xaccs-ics42.md
+        - modules/list/6xchgs-accs-chs42x.md
+        - modules/list/8xthv-thm42.md
+        - modules/list/can.md
+    - Установка модулей: modules/installation.md
+
+
+  # Обновленные плагины
+plugins:
+  - git-revision-date-localized:
+      type: datetime
+      locale: ru
+      enabled: false
+  - search:
+      lang: ru
+      separator: '[\s\-\.]+'
+  - awesome-pages:
+      filename: .pages
+      collapse_single_pages: true  # Оставляем true
+      strict: false  # Добавляем для гибкости
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+  - markdownextradata: {}
+  - mkdocstrings
+  - exclude:
+      glob:
+        - '**/.doc-root.yaml'
+        - '**/.*.png'
+        - '**/.*.md'
+
+# Исправленные расширения Markdown (обновлено для совместимости)
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - fenced_code
+  - tables
+  - md_in_html
+  - meta
+  - nl2br
+  - sane_lists
+  - smarty
+  - toc:
+      permalink: true
+      baselevel: 2
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  analytics:
+    provider: google
+    property: UA-XXXXX-X
+  cache:
+    enabled: true
+    ttl: 3600
+  generator: false   # <- отключает "Made with Material for MkDocs"
+
+
+extra_css:
+  - stylesheets/custom.css
+
+# Отключение strict mode для игнорирования предупреждений
+strict: false
+use_directory_urls: true
+docs_dir: 'docs'
+site_dir: 'site'

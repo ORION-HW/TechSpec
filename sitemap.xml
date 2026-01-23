@@ -2,102 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://orion-hw.github.io/TechSpec/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/modules/installation/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/modules/list/2xacc-ict42s/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/modules/list/2xchgd-dch42s/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/modules/list/2xmic-mic42x/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/modules/list/4xacc-icp42s/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/modules/list/4xao-alo42s/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/modules/list/4xchg-chg42s/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/modules/list/4xstg-wsb42x/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/modules/list/6xaccs-ics42/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/modules/list/6xchgs-accs-chs42x/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/modules/list/8xthv-thm42/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/modules/list/can/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/modules/list/review/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/orion-rx/review-RX/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/orion-rx/config/r2/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/orion-rx/config/r3/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/orion-rx/config/r4-6slot/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/orion-rx/config/r4/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/orionm/review-orionm/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/orionm/spec/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/orionm/channels/can-canfd/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/orionm/channels/gps/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/orionm/channels/port-s-port/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
     <url>
          <loc>https://orion-hw.github.io/TechSpec/orionm/channels/tacho/</loc>
-         <lastmod>2026-01-22</lastmod>
+         <lastmod>2026-01-23</lastmod>
     </url>
 </urlset>
